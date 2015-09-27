@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+}
+
+#stereoView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+img {
+    max-height: 25%;
+    max-width: 25%;
+}
+
+.ui.header {
+    height: 55px;
+}
+

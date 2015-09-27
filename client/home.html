@@ -1,0 +1,30 @@
+<div class="ui large menu">
+  <header class="ui header left item">Onyx-Crab</header>
+  <div class="ui right item">
+    <form name="ui form" enctype="multipart/form-data" ng-submit="uploadFile()">
+
+      <label id="photoInputLabel" for="photoInput" class="ui icon item toggle button">
+        <i class="file icon"></i>
+        Open File</label>
+      <input type="file" id="photoInput" style="display: none" ng-click="loading()">
+
+      <input class="ui checkbox" id="panoramaCheck" type="checkbox"/>
+      <label class="ui label">Panoramic?</label>
+      <button class="ui item button" type="submit">Upload File</button>
+    </form>
+  </div>
+</div>
+
+<!-- slider container -->
+<div class="ui">
+
+    <!-- extra navigation controls -->
+  <ul class="nav ui three column grid">
+    <li ng-repeat="photo in photos" class="column">
+      <div class="ui segment">
+        <img src="{{photo.src}}" ng-click="showPhoto($index, photo);" class="ui fluid image"/>
+      </div>
+    </li>
+  </ul>
+</div>
+
