@@ -10,7 +10,9 @@
   "ignore": [
     "**/.*",
     "test",
-    "tests"
+    "tests",
+     "node_modules",
+    "bower_components"
   ],
   "dependencies": {
     "threejs": "*",
