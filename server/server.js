@@ -1,6 +1,5 @@
 var express = require('express');
-// var mongoose = require('mongoose');
-// var db = require('../db/dbInit.js');
+
 var bodyParser = require('body-parser');
 var busboy = require('connect-busboy');
 var url = require('url');
@@ -42,7 +41,8 @@ app.use('*', function(req, res){
 
 console.log('Server is listening on', port);
 app.listen(port);
-
+// var mongoose = require('mongoose');
+// var db = require('../db/dbInit.js');
 // mongoose.connect('mongodb://localhost/jobColl');
 
 module.exports = app;
