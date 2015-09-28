@@ -43,6 +43,6 @@ app.use('*', function(req, res){
 console.log('Server is listening on', port);
 app.listen(port);
 
-mongoose.connect('mongodb://localhost/jobColl');
+// mongoose.connect('mongodb://localhost/jobColl');
 
 module.exports = app;
