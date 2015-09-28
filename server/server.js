@@ -1,6 +1,6 @@
 var express = require('express');
-var mongoose = require('mongoose');
-var db = require('../db/dbInit.js');
+// var mongoose = require('mongoose');
+// var db = require('../db/dbInit.js');
 var bodyParser = require('body-parser');
 var busboy = require('connect-busboy');
 var url = require('url');
