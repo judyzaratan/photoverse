@@ -2,8 +2,8 @@
   "name": "ONYX-CRAB",
   "version": "1.0.0",
   "engines" : {
-    "node": "0.10.40",
-    "npm": "1.4.28"
+    "node": "0.12.0",
+    "npm": "2.5.1"
   },
   "description": "> 3D VR image viewer",
   "main": "index.js",
