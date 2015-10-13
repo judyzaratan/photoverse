@@ -1,11 +1,11 @@
 {
-  "name": "ONYX-CRAB",
+  "name": "photosphere",
   "version": "1.0.0",
   "engines" : {
     "node": "0.12.0",
     "npm": "2.5.1"
   },
-  "description": "> 3D VR image viewer",
+  "description": "VR image viewer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aggfr12/ONYX-CRAB.git"
+    "url": "https://github.com/mochicat8/photoverse.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aggfr12/ONYX-CRAB/issues"
+    "url": "https://github.com/mochicat8/photoverse/issues"
   },
-  "homepage": "https://github.com/aggfr12/ONYX-CRAB",
+  "homepage": "https://github.com/mochicat8/photoverse",
   "dependencies": {
     "body-parser": "^1.10.0",
     "connect-busboy": "0.0.2",

@@ -13,7 +13,9 @@ var app = express();
 // Parse JSON (uniform resource locators)
 app.use(bodyParser.json());
 // Parse forms (signup/login)
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 // Parse multipart input
 app.use(busboy());
 
@@ -23,11 +25,11 @@ app.post('/', function(req, res) {
   // at the moment, we store the images in the client/photos
   var fstream;
   req.pipe(req.busboy);
-  req.busboy.on('file', function (fieldname, file, filename) {
+  req.busboy.on('file', function(fieldname, file, filename) {
     console.log("Uploading filename: " + filename);
     fstream = fs.createWriteStream(__dirname + '/../client/photos/' + filename);
     file.pipe(fstream);
-    fstream.on('close', function () {
+    fstream.on('close', function() {
       res.end();
     });
   });
@@ -35,7 +37,7 @@ app.post('/', function(req, res) {
 });
 
 app.use(express.static(__dirname + '../../client'));
-app.use('*', function(req, res){
+app.use('*', function(req, res) {
   res.redirect('/');
 });
 

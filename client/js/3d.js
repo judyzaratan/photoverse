@@ -33,21 +33,21 @@ function imageInit(filepath, width, height) {
     }
   });
   //this is our plane object.
-  var planegeometry = new THREE.PlaneBufferGeometry( width, height ); //635, 441 were originial dimensions.
+  var planegeometry = new THREE.PlaneBufferGeometry(width, height); //635, 441 were originial dimensions.
   //This is the material we use for the plane. We map the image onto it.
   var planematerial = new THREE.MeshBasicMaterial({
     color: 0xFFFFFF,
     map: pic
   });
   //this meshes the geometry and material together. Then we rotate and add it to our scene.
-  var plane = new THREE.Mesh( planegeometry, planematerial );
-  plane.rotation.y = -Math.PI/2;
-  scene.add( plane );
+  var plane = new THREE.Mesh(planegeometry, planematerial);
+  plane.rotation.y = -Math.PI / 2;
+  scene.add(plane);
 
   var c = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2))
-  //3.87 as a constant is just what I chose. It was reverse engineered from when both camera positions were initiated to -200. Feel free to change it.
-  camera.position.y = -c/3.87;
-  camera.position.x = -c/3.87;
+    //3.87 as a constant is just what I chose. It was reverse engineered from when both camera positions were initiated to -200. Feel free to change it.
+  camera.position.y = -c / 3.87;
+  camera.position.x = -c / 3.87;
   // both initiated to -200
 }
 
